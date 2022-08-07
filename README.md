@@ -13,4 +13,6 @@ Program is scanning source directory every 30 minutes to keep track of changes u
 If any changes happens between periods, old version is overwritten and saved to minio bucket.  
 If user enters POST /data endpoint, it forces to scan scource immediately  
   
-My biggest problem was to use Docker, everything else was funny to learn and developy myself.   
+My biggest problem was to use Docker, everything else was funny to learn and develop myself.   
+
+To run the app, download github repository and run docker compose up in 01-docker-compose directory
