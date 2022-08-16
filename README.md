@@ -1,8 +1,6 @@
-# ProvectusInternship_WojciechOstrowski
+# API Server
 
-Hi, this is my approach on this task. I'm sorry about uploading docker container on github,  
-but I'm not familiar with it and I coulnd't figure it out. It is fulyl written in Python,  
-App is using Flask to host simple service with given endpoints:  
+Hi, this is my attempt to create contenarized Rest API service with Flask. Service host data of users which is stored in 02-src-data and then proccesed to be saved into minio bucket and processed_data directory. Service includes directory 02-src-data which is being monitored by main script of app and update processed data every 30 minutes. All changes are overwritten. Service hosts 3 simple endpoints:
 - GET /data  
 - POST /data  
 - GET /stats  
